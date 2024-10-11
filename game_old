@@ -1,3 +1,4 @@
+```pascal
 program Vladika Volozavr
 
 uses crt;
@@ -60,3 +61,4 @@ end.
   
   Readln;
 end.
+```
