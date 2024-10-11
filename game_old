@@ -1,0 +1,62 @@
+program Vladika Volozavr
+
+uses crt;
+Var choice:integer;cash,lvl,hp,: Real;
+begin
+  Write('Ti očnulsja i, otkriv glaza, ogļanulsja.'); Readln;
+     lvl:=0+1;
+     
+   TextColor(9);
+  Write('Your level is ',lvl:2:0); 
+  Write('. '); Readln;
+     hp:=0+100;
+     
+   TextColor(12);
+  Write('Your HP is ',hp:3:0);
+  Write('.'); Readln;
+   TextColor(15);
+  Write('Ti obnaružil na zemļe 20 deņeg.'); Readln;
+     cash:=20;
+     
+   TextColor(10);
+  Write('Vi polučiļi +',cash:2:0);
+  Write(' deņeg. '); Readln;
+   TextColor(15);
+  Write('Vi položiļi eti deņģi sebe v karman.'); Readln;
+  Write('Vi pitajetes vspomņitj, što proizoslo, i počemu vi vaļaļis na zemļe.'); Readln;
+  Write('Vaši razdumija prerval ');
+   TextColor(Yellow);
+  Write('Bomž!'); Readln;
+   TextColor(15);
+  
+begin
+  ClrScr;
+  TextColor(White);
+  GotoXY(10, 5); Write('1. Pobitj Bomža.');
+  GotoXY(10, 6); Write('2. Pogovoritj s Bomžom.');
+end;
+ 
+begin
+  case choice of
+    1: begin
+         GotoXY(10, 11); Write('Vi vibrali smertj!');
+       end;
+    2: begin
+         GotoXY(10, 11); Write('Vi vibraļi poboltatj!');
+       end;
+  else
+    GotoXY(10, 11); Write('Неверный выбор, попробуйте снова');
+  end;
+end;
+
+begin
+  DisplayMenu;
+  GotoXY(10, 13); Write('Vvedite vaš vibor (1-2): ');
+  ReadLn(choice);
+  HandleChoice;
+  ReadLn;  
+end.
+
+  
+  Readln;
+end.
